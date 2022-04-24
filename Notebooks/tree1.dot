@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="room_type <= 0.5\nsquared_error = 65826.814\nsamples = 32759\nvalue = 154.313", fillcolor="#fffefd"] ;
+1 [label="availability_365 <= 357.5\nsquared_error = 89241.217\nsamples = 17039\nvalue = 213.578", fillcolor="#fefcfb"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="number_of_reviews <= 0.5\nsquared_error = 67597.159\nsamples = 16318\nvalue = 205.999", fillcolor="#fefcfb"] ;
+1 -> 2 ;
+3 [label="squared_error = 179732.539\nsamples = 3157\nvalue = 263.938", fillcolor="#fefbf9"] ;
+2 -> 3 ;
+4 [label="squared_error = 39700.233\nsamples = 13161\nvalue = 192.101", fillcolor="#fffdfb"] ;
+2 -> 4 ;
+5 [label="minimum_nights <= 1.5\nsquared_error = 548377.745\nsamples = 721\nvalue = 385.105", fillcolor="#fef9f5"] ;
+1 -> 5 ;
+6 [label="squared_error = 1149093.582\nsamples = 145\nvalue = 632.641", fillcolor="#fdf3ed"] ;
+5 -> 6 ;
+7 [label="squared_error = 377847.981\nsamples = 576\nvalue = 322.792", fillcolor="#fefaf7"] ;
+5 -> 7 ;
+8 [label="minimum_nights <= 95.0\nsquared_error = 32514.3\nsamples = 15720\nvalue = 90.075", fillcolor="#ffffff"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="availability_365 <= 362.5\nsquared_error = 17843.666\nsamples = 15667\nvalue = 87.98", fillcolor="#ffffff"] ;
+8 -> 9 ;
+10 [label="squared_error = 13972.454\nsamples = 14888\nvalue = 84.891", fillcolor="#ffffff"] ;
+9 -> 10 ;
+11 [label="squared_error = 88161.3\nsamples = 779\nvalue = 147.017", fillcolor="#fffefd"] ;
+9 -> 11 ;
+12 [label="neighbourhood <= 5.5\nsquared_error = 3984118.658\nsamples = 53\nvalue = 709.585", fillcolor="#fcf2ea"] ;
+8 -> 12 ;
+13 [label="squared_error = 16000000.0\nsamples = 2\nvalue = 6000.0", fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label="squared_error = 2372277.045\nsamples = 51\nvalue = 502.118", fillcolor="#fdf6f1"] ;
+12 -> 14 ;
+}
